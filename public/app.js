@@ -508,6 +508,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const resultSection = document.getElementById('verification-result');
     const resultCardInner = document.getElementById('result-card-inner');
+    const resDocketId = document.getElementById('res-docket-id');
+    const resTimestamp = document.getElementById('res-timestamp');
     const resVerdictIcon = document.getElementById('res-verdict-icon');
     const resVerdictText = document.getElementById('res-verdict-text');
     const gaugeMeterFill = document.getElementById('gauge-meter-fill');
@@ -524,15 +526,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentResultData = null;
 
+    function hashStringCode(str) {
+        let hash = 0;
+        for (let i = 0; i < str.length; i++) {
+            hash = ((hash << 5) - hash) + str.charCodeAt(i);
+            hash |= 0;
+        }
+        return Math.abs(hash);
+    }
+
     async function triggerVerification(type, payload) {
         resultSection.classList.add('hidden');
         scanningRadar.classList.remove('hidden');
         scanningRadar.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-        updateRadarStep("Accessing live online knowledge bases...", "Searching Wikipedia, public registries & news archives...", 35);
+        updateRadarStep("Querying gazetted registries & verified archives...", "Accessing official public records, constitutional directives & legal gazettes...", 35);
 
         const stepTimer1 = setTimeout(() => {
-            updateRadarStep("Cross-referencing evidence and civic facts...", "Analyzing contradictions, dates, entities & credibility signals...", 75);
+            updateRadarStep("Executing evidentiary contradiction analysis...", "Inspecting temporal assertions, entity provenance & credibility markers...", 75);
         }, 1100);
 
         try {
@@ -554,7 +565,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await response.json();
             clearTimeout(stepTimer1);
 
-            updateRadarStep("Synthesizing civic fact-check verdict...", "Calculating misinformation risk score...", 100);
+            updateRadarStep("Compiling official civic audit dossier...", "Indexing primary source citations & forensic risk index...", 100);
 
             setTimeout(() => {
                 scanningRadar.classList.add('hidden');
@@ -568,7 +579,7 @@ document.addEventListener('DOMContentLoaded', () => {
             updateRadarStep("Executing in-browser civic evidence engine...", "Cross-referencing historical & constitutional archives...", 85);
 
             const fallbackResult = await runClientFallbackVerification(type, payload);
-            updateRadarStep("Synthesizing civic fact-check verdict...", "Calculating misinformation risk score...", 100);
+            updateRadarStep("Compiling official civic audit dossier...", "Indexing primary source citations & forensic risk index...", 100);
 
             setTimeout(() => {
                 scanningRadar.classList.add('hidden');
@@ -776,6 +787,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayVerificationResult(data) {
         currentResultData = data;
 
+        if (resDocketId) {
+            const docketNum = 1000 + (hashStringCode(data.claim || 'claim') % 9000);
+            resDocketId.textContent = `CASE REF: VF-2026-NGR-${docketNum}`;
+        }
+        if (resTimestamp) {
+            const now = new Date();
+            const dateStr = now.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).toUpperCase();
+            const timeStr = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+            resTimestamp.textContent = `${dateStr} • ${timeStr} WAT`;
+        }
+
         resVerdictText.textContent = data.truthStatus || "Analysis Complete";
         resClaimQuote.textContent = `"${data.claim}"`;
         resAnalysisText.textContent = data.analysis || "No detailed analysis returned.";
@@ -907,26 +929,33 @@ document.addEventListener('DOMContentLoaded', () => {
             ? currentResultData.sources.map(s => `  • ${s}`).join('\n')
             : '  • National Public Records & Fact-Checking Network';
 
+        const docketCode = document.getElementById('res-docket-id')?.textContent || 'CASE REF: VF-2026-NGR-8492';
+        const timestamp = document.getElementById('res-timestamp')?.textContent || '26 SEP 2026 • WAT';
+
         const report = 
-`VERIFEYE FACT-CHECK REPORT
-=========================
-• Claim Analyzed: "${currentResultData.claim}"
-• Verdict: ${currentResultData.truthStatus}
+`VERIFEYE // OFFICIAL CIVIC AUDIT DOSSIER
+========================================
+${docketCode} | ${timestamp}
+
+• Claim Inspected: "${currentResultData.claim}"
+• Official Verdict: ${currentResultData.truthStatus}
 • Misinformation Risk: ${currentResultData.riskScore}% (${currentResultData.riskLevel})
 
-💡 Verified Truth & Analysis:
+📋 Evidentiary Findings & Factual Context:
 ${currentResultData.analysis}
 
 📚 Verified Primary Sources:
 ${sourcesFormatted}
 
-🛡️ Civic Advice:
+🛡️ Community Advisory & Mitigation:
 ${currentResultData.civicAdvice}
 
-Verified via VerifEye AI Civic Guard | WhatsApp: wa.me/14155238886`;
+========================================
+Verified via VerifEye West African Media Registry
+WhatsApp Hotline: wa.me/14155238886`;
 
         navigator.clipboard.writeText(report).then(() => {
-            showToast("WhatsApp Report copied to clipboard!", "clipboard");
+            showToast("Official Fact-Check Dossier copied to clipboard!", "clipboard");
         }).catch(() => {
             showToast("Failed to copy automatically. Please select text.", "error");
         });

@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VERIFEYE — Live AI Civic Fact-Checking & Deepfake Guard</title>
-    <meta name="description" content="West African civic integrity and media verification platform. Verify viral text claims, inspect voice notes for AI deepfakes, analyze manipulated images, browse live misinformation radar feeds, and access instant WhatsApp verification sync.">
-    
-    <!-- Modern Typography: Outfit & Plus Jakarta Sans -->
+    <title>VERIFEYE — West African Civic Integrity & Media Verification Desk</title>
+    <meta name="description"
+        content="Independent civic verification and digital media forensics platform. Verify viral text claims, inspect voice notes for AI deepfakes, analyze manipulated images, and browse real-time regional misinformation intelligence.">
+
+    <!-- Editorial & Technical Typography: Plus Jakarta Sans & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <link rel="icon" type="image/jpeg" href="/assets/logo.jpg">
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-    <!-- Background Ambient Glows -->
-    <div class="ambient-glow glow-1"></div>
-    <div class="ambient-glow glow-2"></div>
-    <div class="ambient-glow glow-3"></div>
 
+<body>
     <!-- Top Fixed Navigation Bar -->
     <header class="app-header">
         <div class="header-container">
@@ -27,25 +27,28 @@
             <a href="#verification-studio" class="brand" id="brand-home-link" aria-label="VerifEye Home">
                 <img src="/assets/logo.jpg" alt="VerifEye Logo" class="brand-logo" id="header-brand-logo">
                 <div class="brand-text">
-                    <span class="brand-name">Verif<span class="gradient-text">Eye</span></span>
-                    <span class="brand-badge">CIVIC AI GUARD</span>
+                    <span class="brand-name">VERIF<span class="brand-name-accent">EYE</span></span>
+                    <span class="brand-badge">CIVIC MEDIA REGISTRY</span>
                 </div>
             </a>
 
             <!-- Navigation Links -->
             <nav class="view-nav" aria-label="Main Platform Navigation">
                 <a href="#verification-studio" class="nav-item active" id="nav-btn-command">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        <path d="m9 12 2 2 4-4"/>
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        <path d="m9 12 2 2 4-4" />
                     </svg>
-                    <span>Verify Claims</span>
+                    <span>Verification Desk</span>
                 </a>
                 <a href="#radar-feed" class="nav-item" id="nav-btn-radar">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"/>
-                        <line x1="2" x2="22" y1="12" y2="12"/>
-                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="2" x2="22" y1="12" y2="12" />
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
                     </svg>
                     <span>Misinformation Radar</span>
                 </a>
@@ -53,39 +56,44 @@
 
             <!-- Status, Theme Toggle & WhatsApp CTA -->
             <div class="header-actions">
-                <div class="status-pill" id="status-indicator" title="Engine Grounding Active">
+                <div class="status-pill" id="status-indicator" title="Grounded Public Records Connected">
                     <span class="pulse-dot"></span>
-                    <span class="status-text">Engine Online</span>
+                    <span class="status-text">Engine Active</span>
                 </div>
 
                 <!-- Theme Switcher (Dark Ops Mode <-> Luminous Light) -->
-                <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle Dark Ops / Luminous Light Mode">
+                <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle dark/light theme"
+                    title="Toggle Darkroom / Luminous Mode">
                     <span class="theme-icon icon-light">
-                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="5"/>
-                            <line x1="12" y1="1" x2="12" y2="3"/>
-                            <line x1="12" y1="21" x2="12" y2="23"/>
-                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                            <line x1="1" y1="12" x2="3" y2="12"/>
-                            <line x1="21" y1="12" x2="23" y2="12"/>
-                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5" />
+                            <line x1="12" y1="1" x2="12" y2="3" />
+                            <line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" />
+                            <line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
                         </svg>
                     </span>
                     <span class="theme-icon icon-dark hidden">
-                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
                         </svg>
                     </span>
                 </button>
 
                 <!-- WhatsApp Bot Direct Link -->
-                <a href="https://wa.me/14155238886" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" id="header-whatsapp-btn" title="Open VerifEye on WhatsApp">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.059-1.146-.086-.33-.106-.745-.257-1.317-.507-1.929-.838-3.197-2.776-3.293-2.905-.096-.129-.778-1.036-.778-1.975 0-.939.49-1.401.664-1.593.174-.192.38-.24.507-.24.127 0 .253.002.364.007.119.006.277-.046.434.331.162.388.552 1.343.6 1.442.049.098.082.213.016.342-.066.13-.098.212-.196.326-.098.115-.207.256-.296.344-.099.098-.202.205-.087.402.115.197.51 1.055 1.096 1.576.757.674 1.396.883 1.593.982.198.099.314.082.43-.05.115-.132.493-.574.625-.771.132-.197.264-.165.445-.098.181.066 1.147.541 1.345.64.198.099.33.148.379.231.049.083.049.48-.095.885z"/>
+                <a href="https://wa.me/14155238886" target="_blank" rel="noopener noreferrer" class="whatsapp-btn"
+                    id="header-whatsapp-btn" title="Open VerifEye on WhatsApp">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path
+                            d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.059-1.146-.086-.33-.106-.745-.257-1.317-.507-1.929-.838-3.197-2.776-3.293-2.905-.096-.129-.778-1.036-.778-1.975 0-.939.49-1.401.664-1.593.174-.192.38-.24.507-.24.127 0 .253.002.364.007.119.006.277-.046.434.331.162.388.552 1.343.6 1.442.049.098.082.213.016.342-.066.13-.098.212-.196.326-.098.115-.207.256-.296.344-.099.098-.202.205-.087.402.115.197.51 1.055 1.096 1.576.757.674 1.396.883 1.593.982.198.099.314.082.43-.05.115-.132.493-.574.625-.771.132-.197.264-.165.445-.098.181.066 1.147.541 1.345.64.198.099.33.148.379.231.049.083.049.48-.095.885z" />
                     </svg>
-                    <span>WhatsApp Bot</span>
+                    <span>WhatsApp Desk</span>
                 </a>
             </div>
         </div>
@@ -101,96 +109,93 @@
             <!-- Hero Header Section -->
             <div class="hero-section">
                 <div class="hero-badge">
-                    <span class="badge-icon">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                            <path d="m9 12 2 2 4-4"/>
-                        </svg>
-                    </span>
-                    <span>AIDF 2026 Civic Integrity & Media Verification Initiative</span>
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">CIVIC MEDIA INTELLIGENCE & ACCREDITATION</span>
+                    <span class="badge-code">REF: AIDF-2026</span>
                 </div>
                 <h1 class="hero-title">
-                    Verify Any News, Media or Viral Broadcast in <span class="gradient-text">Real Time</span>
+                    Independent Civic Verification &amp; Digital Media Forensics
                 </h1>
                 <p class="hero-subtitle">
-                    Combating misinformation, synthetic deepfake audio, and viral phishing scams across Nigeria and West Africa with live online evidence retrieval and civic AI intelligence.
+                    Cross-referencing viral claims, voice note acoustic signatures, and manipulated graphics across
+                    Nigeria and West Africa with gazetted public records and accredited fact-checking archives.
                 </p>
-                
+
                 <!-- Trust & Architecture Metrics Bar -->
                 <div class="hero-trust-bar">
                     <div class="trust-item">
-                        <span class="trust-icon">
-                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-                            </svg>
-                        </span>
-                        <span>Real-Time Online Grounding</span>
+                        <span class="trust-item-bullet"></span>
+                        <span class="trust-name">Primary Source Grounding</span>
+                        <span class="trust-detail">(CBN, INEC, National Archives)</span>
                     </div>
                     <div class="trust-item">
-                        <span class="trust-icon">
-                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
-                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                                <line x1="12" x2="12" y1="19" y2="22"/>
-                            </svg>
-                        </span>
-                        <span>Deepfake Audio Forensics</span>
+                        <span class="trust-item-bullet"></span>
+                        <span class="trust-name">Acoustic Audio Forensics</span>
+                        <span class="trust-detail">(Synthetic Voice Detection)</span>
                     </div>
                     <div class="trust-item">
-                        <span class="trust-icon">
-                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"/>
-                                <line x1="2" x2="22" y1="12" y2="12"/>
-                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                            </svg>
-                        </span>
-                        <span>5 Regional Languages</span>
+                        <span class="trust-item-bullet"></span>
+                        <span class="trust-name">5 Regional Languages</span>
+                        <span class="trust-detail">(Eng, Pidgin, Hausa, Yorùbá, Igbo)</span>
                     </div>
                     <div class="trust-item">
-                        <span class="trust-icon">
-                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                            </svg>
-                        </span>
-                        <span>Instant WhatsApp Sync</span>
+                        <span class="trust-item-bullet"></span>
+                        <span class="trust-name">24/7 WhatsApp Hotline</span>
+                        <span class="trust-detail">(+1 415 523-8886)</span>
                     </div>
                 </div>
             </div>
 
             <!-- Central Verification Studio Card -->
             <div class="studio-card" id="verification-studio">
+                <!-- Studio Docket Header -->
+                <div class="studio-docket-header">
+                    <div class="docket-header-left">
+                        <span class="docket-mono-tag">INTAKE DESK // FORENSIC WORKBENCH</span>
+                        <span class="docket-dot-sep">•</span>
+                        <span class="docket-mono-meta">PROTOCOL: V4-GROUNDED SHA-256</span>
+                    </div>
+                    <div class="docket-header-right">
+                        <span class="docket-live-dot"></span>
+                        <span class="docket-live-status">ARCHIVES CONNECTED</span>
+                    </div>
+                </div>
+
                 <!-- Studio Tab Switcher -->
                 <div class="studio-tabs" role="tablist">
                     <button class="tab-btn active" id="tab-btn-text" role="tab" aria-selected="true" data-tab="text">
                         <span class="tab-icon">
-                            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                <polyline points="14 2 14 8 20 8"/>
-                                <line x1="16" x2="8" y1="13" y2="13"/>
-                                <line x1="16" x2="8" y1="17" y2="17"/>
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" x2="8" y1="13" y2="13" />
+                                <line x1="16" x2="8" y1="17" y2="17" />
                             </svg>
                         </span>
-                        <span>Text & Broadcast Fact-Check</span>
+                        <span>Text &amp; Claim Cross-Check</span>
                     </button>
                     <button class="tab-btn" id="tab-btn-audio" role="tab" aria-selected="false" data-tab="audio">
                         <span class="tab-icon">
-                            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
-                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                                <line x1="12" x2="12" y1="19" y2="22"/>
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                <line x1="12" x2="12" y1="19" y2="22" />
                             </svg>
                         </span>
-                        <span>Voice Note & Deepfake Audio Guard</span>
+                        <span>Voice Note &amp; Audio Forensics</span>
                     </button>
                     <button class="tab-btn" id="tab-btn-image" role="tab" aria-selected="false" data-tab="image">
                         <span class="tab-icon">
-                            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
-                                <circle cx="9" cy="9" r="2"/>
-                                <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                                <circle cx="9" cy="9" r="2" />
+                                <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
                             </svg>
                         </span>
-                        <span>Image & Flyer Inspector</span>
+                        <span>Image &amp; Flyer Tamper Inspector</span>
                     </button>
                 </div>
 
@@ -198,16 +203,20 @@
                 <div class="tab-panel active" id="panel-text" role="tabpanel">
                     <div class="panel-header">
                         <div class="input-meta-controls">
-                            <label for="claim-input" class="input-label">Enter Claim or Forwarded Broadcast to Fact-Check:</label>
+                            <label for="claim-input" class="input-label">Enter Claim or Forwarded Broadcast to
+                                Fact-Check:</label>
                             <div class="lang-selector-wrapper">
                                 <span class="lang-icon">
-                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <line x1="2" x2="22" y1="12" y2="12"/>
-                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <line x1="2" x2="22" y1="12" y2="12" />
+                                        <path
+                                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
                                     </svg>
                                 </span>
-                                <select id="lang-select" class="lang-select" aria-label="Select report response language">
+                                <select id="lang-select" class="lang-select"
+                                    aria-label="Select report response language">
                                     <option value="English" selected>English</option>
                                     <option value="Nigerian Pidgin">Nigerian Pidgin</option>
                                     <option value="Hausa">Hausa</option>
@@ -220,15 +229,13 @@
 
                     <!-- Input Textarea -->
                     <div class="textarea-wrapper">
-                        <textarea 
-                            id="claim-input" 
-                            class="claim-textarea" 
-                            placeholder="e.g. Paste a viral WhatsApp forward, rumor, or question (e.g. 'Nigeria gained independence in 2005?')..."
-                            rows="4"
-                        ></textarea>
+                        <textarea id="claim-input" class="claim-textarea"
+                            placeholder="Paste forwarded WhatsApp broadcast, viral rumor, or statement (e.g. 'Nigeria gained independence in 2005?')..."
+                            rows="4"></textarea>
                         <div class="textarea-footer">
                             <button class="clear-btn" id="clear-claim-btn" title="Clear text">
-                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="18" y1="6" x2="6" y2="18"></line>
                                     <line x1="6" y1="6" x2="18" y2="18"></line>
                                 </svg>
@@ -241,16 +248,24 @@
                     <!-- Quick Test Chips -->
                     <div class="quick-chips-section">
                         <span class="chips-label">
-                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-right:4px;">
-                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                                style="display:inline-block; vertical-align:middle; margin-right:4px;">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
                             </svg>
-                            Quick Test Sample Prompts:
+                            Sample Public Records &amp; Inquiries:
                         </span>
                         <div class="chips-container" id="quick-chips-list">
-                            <button class="chip-btn" data-claim="Nigeria gained independence in 2005">Nigeria gained independence in 2005?</button>
-                            <button class="chip-btn" data-claim="CBN is distributing ₦50,000 cash grant to all citizens via WhatsApp link">CBN ₦50,000 Cash Grant Giveaway</button>
-                            <button class="chip-btn" data-claim="Is Nigeria officially a Federal Republic?">Is Nigeria a Federal Republic?</button>
-                            <button class="chip-btn" data-claim="Federal government announced emergency curfew across 36 states">Emergency Curfew in 36 States?</button>
+                            <button class="chip-btn" data-claim="Nigeria gained independence in 2005">Independence in
+                                2005?</button>
+                            <button class="chip-btn"
+                                data-claim="CBN is distributing ₦50,000 cash grant to all citizens via WhatsApp link">CBN
+                                ₦50,000 Cash Grant Scheme</button>
+                            <button class="chip-btn" data-claim="Is Nigeria officially a Federal Republic?">Federal
+                                Republic Status</button>
+                            <button class="chip-btn"
+                                data-claim="Federal government announced emergency curfew across 36 states">Emergency
+                                Curfew in 36 States?</button>
                         </div>
                     </div>
 
@@ -258,11 +273,13 @@
                     <div class="action-row">
                         <button class="btn-verify" id="btn-verify-claim">
                             <span class="btn-icon">
-                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    <path d="m9 12 2 2 4-4" />
                                 </svg>
                             </span>
-                            <span class="btn-text">Verify Claim Now</span>
+                            <span class="btn-text">Audit Claim Evidence</span>
                             <span class="btn-spinner hidden" id="verify-spinner"></span>
                         </button>
                     </div>
@@ -271,35 +288,44 @@
                 <!-- Tab 2: Audio Deepfake Guard -->
                 <div class="tab-panel" id="panel-audio" role="tabpanel">
                     <div class="panel-header">
-                        <label class="input-label">Upload a Suspicious Voice Note, Audio Broadcast or Select a Civic Sample:</label>
+                        <label class="input-label">Upload a Suspicious Voice Note, Audio Broadcast or Select a Civic
+                            Sample:</label>
                     </div>
 
                     <!-- Voice Note Upload & Drag-and-Drop Area -->
                     <div class="media-upload-container">
-                        <div class="upload-dropzone" id="audio-dropzone" role="button" tabindex="0" aria-label="Upload Voice Note or Audio file">
-                            <input type="file" id="audio-file-input" accept="audio/*,.mp3,.wav,.ogg,.m4a,.aac,.opus" class="hidden-file-input" style="display: none;">
+                        <div class="upload-dropzone" id="audio-dropzone" role="button" tabindex="0"
+                            aria-label="Upload Voice Note or Audio file">
+                            <input type="file" id="audio-file-input" accept="audio/*,.mp3,.wav,.ogg,.m4a,.aac,.opus"
+                                class="hidden-file-input" style="display: none;">
                             <div class="dropzone-content">
                                 <div class="dropzone-icon audio-icon">
-                                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
-                                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                                        <line x1="12" x2="12" y1="19" y2="22"/>
+                                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                                        <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                        <line x1="12" x2="12" y1="19" y2="22" />
                                     </svg>
                                 </div>
                                 <div class="dropzone-text">
-                                    <p class="dropzone-title">Drag & drop your voice note here, or <span class="dropzone-highlight">Browse Audio Files</span></p>
-                                    <p class="dropzone-subtitle">Supports WhatsApp Voice Notes (.ogg, .opus), MP3, WAV, M4A, AAC • Max 25MB</p>
+                                    <p class="dropzone-title">Drag & drop your voice note here, or <span
+                                            class="dropzone-highlight">Browse Audio Files</span></p>
+                                    <p class="dropzone-subtitle">Supports WhatsApp Voice Notes (.ogg, .opus), MP3, WAV,
+                                        M4A, AAC • Max 25MB</p>
                                 </div>
                                 <div class="dropzone-action-btns">
                                     <button type="button" class="btn-browse-file" id="btn-browse-audio">
-                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                            <polyline points="17 8 12 3 7 8"/>
-                                            <line x1="12" x2="12" y1="3" y2="15"/>
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none"
+                                            stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                            <polyline points="17 8 12 3 7 8" />
+                                            <line x1="12" x2="12" y1="3" y2="15" />
                                         </svg>
                                         <span>Browse Voice Note</span>
                                     </button>
-                                    <button type="button" class="btn-record-mic" id="btn-record-audio" title="Record voice note with microphone">
+                                    <button type="button" class="btn-record-mic" id="btn-record-audio"
+                                        title="Record voice note with microphone">
                                         <span class="record-pulse-dot" id="record-dot"></span>
                                         <span id="record-btn-text">Record Voice Note</span>
                                     </button>
@@ -312,18 +338,22 @@
                             <div class="uploaded-media-header">
                                 <div class="uploaded-file-meta">
                                     <span class="uploaded-badge audio-badge">
-                                        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
-                                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                                            <line x1="12" x2="12" y1="19" y2="22"/>
+                                        <svg viewBox="0 0 24 24" width="13" height="13" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                                            <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                            <line x1="12" x2="12" y1="19" y2="22" />
                                         </svg>
                                         Custom Audio Attached
                                     </span>
                                     <h4 class="uploaded-file-name" id="uploaded-audio-name">my-voice-note.ogg</h4>
                                     <span class="uploaded-file-size" id="uploaded-audio-size">1.4 MB</span>
                                 </div>
-                                <button type="button" class="btn-remove-media" id="btn-remove-audio" title="Remove audio">
-                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <button type="button" class="btn-remove-media" id="btn-remove-audio"
+                                    title="Remove audio">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <line x1="18" y1="6" x2="6" y2="18"></line>
                                         <line x1="6" y1="6" x2="18" y2="18"></line>
                                     </svg>
@@ -331,7 +361,8 @@
                                 </button>
                             </div>
                             <div class="uploaded-audio-player-box">
-                                <audio id="native-audio-player" controls preload="metadata" style="width: 100%; border-radius: 8px; margin-top: 0.5rem;"></audio>
+                                <audio id="native-audio-player" controls preload="metadata"
+                                    style="width: 100%; border-radius: 8px; margin-top: 0.5rem;"></audio>
                             </div>
                         </div>
                     </div>
@@ -342,12 +373,15 @@
                     </div>
 
                     <div class="media-samples-grid" id="audio-samples-grid">
-                        <div class="sample-card active" data-audio-type="clone" data-audio-title="Viral Bank Panic Voice Note" data-audio-transcript="Dem talk say make everybody go bank withdraw all their money before Friday say CBN wan freeze accounts...">
+                        <div class="sample-card active" data-audio-type="clone"
+                            data-audio-title="Viral Bank Panic Voice Note"
+                            data-audio-transcript="Dem talk say make everybody go bank withdraw all their money before Friday say CBN wan freeze accounts...">
                             <div class="sample-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
-                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                                    <line x1="12" x2="12" y1="19" y2="22"/>
+                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent-blue)"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                    <line x1="12" x2="12" y1="19" y2="22" />
                                 </svg>
                             </div>
                             <div class="sample-info">
@@ -357,12 +391,15 @@
                             </div>
                         </div>
 
-                        <div class="sample-card" data-audio-type="election" data-audio-title="Leaked Election Recording" data-audio-transcript="Urgent broadcast: Election results have been pre-cancelled in 5 states by the electoral commission...">
+                        <div class="sample-card" data-audio-type="election" data-audio-title="Leaked Election Recording"
+                            data-audio-transcript="Urgent broadcast: Election results have been pre-cancelled in 5 states by the electoral commission...">
                             <div class="sample-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--color-warning)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
-                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                                    <line x1="12" x2="12" y1="19" y2="22"/>
+                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                    stroke="var(--color-warning)" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                    <line x1="12" x2="12" y1="19" y2="22" />
                                 </svg>
                             </div>
                             <div class="sample-info">
@@ -378,31 +415,38 @@
                         <div class="audio-controls">
                             <button class="play-btn" id="audio-sim-play" aria-label="Play sample audio">
                                 <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                    <polygon points="5 3 19 12 5 21 5 3" />
                                 </svg>
                             </button>
                             <div class="waveform-bars" id="waveform-container">
-                                <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
-                                <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
-                                <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
-                                <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
-                                <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
+                                <span class="wave-bar"></span><span class="wave-bar"></span><span
+                                    class="wave-bar"></span>
+                                <span class="wave-bar"></span><span class="wave-bar"></span><span
+                                    class="wave-bar"></span>
+                                <span class="wave-bar"></span><span class="wave-bar"></span><span
+                                    class="wave-bar"></span>
+                                <span class="wave-bar"></span><span class="wave-bar"></span><span
+                                    class="wave-bar"></span>
+                                <span class="wave-bar"></span><span class="wave-bar"></span><span
+                                    class="wave-bar"></span>
                             </div>
                             <span class="audio-duration">0:18 / 0:18</span>
                         </div>
                         <div class="audio-transcript-box">
                             <strong>Audio Transcript / Content:</strong>
-                            <p id="audio-transcript-text">"Dem talk say make everybody go bank withdraw all their money before Friday say CBN wan freeze accounts..."</p>
+                            <p id="audio-transcript-text">"Dem talk say make everybody go bank withdraw all their money
+                                before Friday say CBN wan freeze accounts..."</p>
                         </div>
                     </div>
 
                     <div class="action-row">
                         <button class="btn-verify" id="btn-verify-audio">
                             <span class="btn-icon">
-                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
-                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                                    <line x1="12" x2="12" y1="19" y2="22"/>
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                    <line x1="12" x2="12" y1="19" y2="22" />
                                 </svg>
                             </span>
                             <span class="btn-text">Analyze Audio with Deepfake Guard</span>
@@ -413,31 +457,39 @@
                 <!-- Tab 3: Image / Flyer Inspector -->
                 <div class="tab-panel" id="panel-image" role="tabpanel">
                     <div class="panel-header">
-                        <label class="input-label">Upload a Suspicious Flyer, Poster, Screenshot or Select a Civic Sample:</label>
+                        <label class="input-label">Upload a Suspicious Flyer, Poster, Screenshot or Select a Civic
+                            Sample:</label>
                     </div>
 
                     <!-- Image Upload & Drag-and-Drop Area -->
                     <div class="media-upload-container">
-                        <div class="upload-dropzone" id="image-dropzone" role="button" tabindex="0" aria-label="Upload Flyer or Image">
-                            <input type="file" id="image-file-input" accept="image/*,.jpg,.jpeg,.png,.webp" class="hidden-file-input" style="display: none;">
+                        <div class="upload-dropzone" id="image-dropzone" role="button" tabindex="0"
+                            aria-label="Upload Flyer or Image">
+                            <input type="file" id="image-file-input" accept="image/*,.jpg,.jpeg,.png,.webp"
+                                class="hidden-file-input" style="display: none;">
                             <div class="dropzone-content">
                                 <div class="dropzone-icon image-icon">
-                                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
-                                        <circle cx="9" cy="9" r="2"/>
-                                        <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                                        <circle cx="9" cy="9" r="2" />
+                                        <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
                                     </svg>
                                 </div>
                                 <div class="dropzone-text">
-                                    <p class="dropzone-title">Drag & drop your flyer or graphic here, or <span class="dropzone-highlight">Browse Files</span></p>
-                                    <p class="dropzone-subtitle">Supports PNG, JPG, JPEG, WEBP WhatsApp screenshots, circulars & posters • Max 15MB</p>
+                                    <p class="dropzone-title">Drag & drop your flyer or graphic here, or <span
+                                            class="dropzone-highlight">Browse Files</span></p>
+                                    <p class="dropzone-subtitle">Supports PNG, JPG, JPEG, WEBP WhatsApp screenshots,
+                                        circulars & posters • Max 15MB</p>
                                 </div>
                                 <div class="dropzone-action-btns">
                                     <button type="button" class="btn-browse-file" id="btn-browse-image">
-                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                            <polyline points="17 8 12 3 7 8"/>
-                                            <line x1="12" x2="12" y1="3" y2="15"/>
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none"
+                                            stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                            <polyline points="17 8 12 3 7 8" />
+                                            <line x1="12" x2="12" y1="3" y2="15" />
                                         </svg>
                                         <span>Browse Flyer Image</span>
                                     </button>
@@ -454,22 +506,29 @@
                             <div class="preview-details">
                                 <div class="uploaded-file-meta">
                                     <span class="uploaded-badge image-badge">
-                                        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                            <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
-                                            <circle cx="9" cy="9" r="2"/>
-                                            <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                                        <svg viewBox="0 0 24 24" width="13" height="13" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                                            <circle cx="9" cy="9" r="2" />
+                                            <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
                                         </svg>
                                         Custom Graphic Attached
                                     </span>
                                     <h4 class="uploaded-file-name" id="uploaded-image-name">flyer.png</h4>
-                                    <span class="uploaded-file-size" id="uploaded-image-meta">1080 x 1080 • 520 KB</span>
+                                    <span class="uploaded-file-size" id="uploaded-image-meta">1080 x 1080 • 520
+                                        KB</span>
                                 </div>
                                 <div class="flyer-claim-input-box">
-                                    <label for="uploaded-flyer-claim" class="input-sublabel">Claim or Text in Graphic (Optional, AI inspects full image):</label>
-                                    <input type="text" id="uploaded-flyer-claim" class="flyer-text-input" placeholder="e.g. 'Presidential Palliative Grant of 50,000 Naira to all accounts'">
+                                    <label for="uploaded-flyer-claim" class="input-sublabel">Claim or Text in Graphic
+                                        (Optional, AI inspects full image):</label>
+                                    <input type="text" id="uploaded-flyer-claim" class="flyer-text-input"
+                                        placeholder="e.g. 'Presidential Palliative Grant of 50,000 Naira to all accounts'">
                                 </div>
-                                <button type="button" class="btn-remove-media" id="btn-remove-image" title="Remove image">
-                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <button type="button" class="btn-remove-media" id="btn-remove-image"
+                                    title="Remove image">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <line x1="18" y1="6" x2="6" y2="18"></line>
                                         <line x1="6" y1="6" x2="18" y2="18"></line>
                                     </svg>
@@ -485,12 +544,15 @@
                     </div>
 
                     <div class="media-samples-grid" id="image-samples-grid">
-                        <div class="sample-card active" data-image-type="scam_grant" data-image-title="CBN ₦50,000 Grant Flyer" data-image-claim="Central Bank of Nigeria Presidential Palliative Grant of 50,000 Naira to all account holders. Register at cbn-palliative-grant.xyz">
+                        <div class="sample-card active" data-image-type="scam_grant"
+                            data-image-title="CBN ₦50,000 Grant Flyer"
+                            data-image-claim="Central Bank of Nigeria Presidential Palliative Grant of 50,000 Naira to all account holders. Register at cbn-palliative-grant.xyz">
                             <div class="sample-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--color-false)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
-                                    <circle cx="9" cy="9" r="2"/>
-                                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--color-false)"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                                    <circle cx="9" cy="9" r="2" />
+                                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
                                 </svg>
                             </div>
                             <div class="sample-info">
@@ -500,13 +562,16 @@
                             </div>
                         </div>
 
-                        <div class="sample-card" data-image-type="official_notice" data-image-title="Ministry Notice" data-image-claim="Federal Ministry of Education announcement regarding school calendar adjustments and public holiday dates">
+                        <div class="sample-card" data-image-type="official_notice" data-image-title="Ministry Notice"
+                            data-image-claim="Federal Ministry of Education announcement regarding school calendar adjustments and public holiday dates">
                             <div class="sample-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--color-verified)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                    <polyline points="14 2 14 8 20 8"/>
-                                    <line x1="16" x2="8" y1="13" y2="13"/>
-                                    <line x1="16" x2="8" y1="17" y2="17"/>
+                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                                    stroke="var(--color-verified)" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" x2="8" y1="13" y2="13" />
+                                    <line x1="16" x2="8" y1="17" y2="17" />
                                 </svg>
                             </div>
                             <div class="sample-info">
@@ -520,9 +585,10 @@
                     <div class="action-row">
                         <button class="btn-verify" id="btn-verify-image">
                             <span class="btn-icon">
-                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="11" cy="11" r="8"/>
-                                    <line x1="21" x2="16.65" y1="21" y2="16.65"/>
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <line x1="21" x2="16.65" y1="21" y2="16.65" />
                                 </svg>
                             </span>
                             <span class="btn-text">Inspect Graphic for Manipulation</span>
@@ -538,15 +604,17 @@
                         <div class="radar-circle"></div>
                         <div class="radar-beam"></div>
                         <div class="radar-center-icon">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
-                                <circle cx="12" cy="12" r="3"/>
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent-blue)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                                <circle cx="12" cy="12" r="3" />
                             </svg>
                         </div>
                     </div>
                     <div class="scanning-details">
                         <h3 class="scanning-headline" id="scan-step-title">Gathering live online evidence...</h3>
-                        <p class="scanning-sub" id="scan-step-desc">Connecting to real-time verification and knowledge sources...</p>
+                        <p class="scanning-sub" id="scan-step-desc">Connecting to real-time verification and knowledge
+                            sources...</p>
                         <div class="scan-progress-bar">
                             <div class="scan-progress-fill" id="scan-progress-fill"></div>
                         </div>
@@ -557,16 +625,32 @@
             <!-- Verification Results Card -->
             <div class="result-section hidden" id="verification-result" aria-live="polite">
                 <div class="result-card" id="result-card-inner">
+                    <!-- Dossier Official Meta Header -->
+                    <div class="dossier-meta-header">
+                        <div class="dossier-id-block">
+                            <span class="dossier-label">OFFICIAL CIVIC AUDIT DOSSIER</span>
+                            <span class="dossier-id" id="res-docket-id">CASE REF: VF-2026-NGR-8492</span>
+                        </div>
+                        <div class="dossier-audit-block">
+                            <span class="dossier-timestamp" id="res-timestamp">26 SEP 2026 • 11:15 UTC+1</span>
+                            <span class="dossier-seal-badge">
+                                <span class="dossier-seal-dot"></span>
+                                GROUNDED PUBLIC RECORD
+                            </span>
+                        </div>
+                    </div>
+
                     <!-- Result Top Bar: Verdict Badge + Misinformation Risk Meter -->
                     <div class="result-top-bar">
                         <div class="verdict-wrapper">
-                            <span class="result-meta-label">VERIFIED FACT-CHECK VERDICT</span>
+                            <span class="result-meta-label">FORENSIC VERIFICATION VERDICT</span>
                             <div class="verdict-badge" id="res-verdict-badge">
                                 <span class="verdict-icon" id="res-verdict-icon">
-                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <line x1="15" x2="9" y1="9" y2="15"/>
-                                        <line x1="9" x2="15" y1="9" y2="15"/>
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <line x1="15" x2="9" y1="9" y2="15" />
+                                        <line x1="9" x2="15" y1="9" y2="15" />
                                     </svg>
                                 </span>
                                 <span class="verdict-text" id="res-verdict-text">False / Historically Inaccurate</span>
@@ -593,21 +677,24 @@
 
                     <!-- Claim Analyzed -->
                     <div class="result-row claim-box">
-                        <span class="section-title">Claim Analyzed:</span>
-                        <blockquote class="analyzed-quote" id="res-claim-quote">"Nigeria gained independence in 2005"</blockquote>
+                        <span class="section-title">Submitted Claim for Inspection:</span>
+                        <blockquote class="analyzed-quote" id="res-claim-quote">"Nigeria gained independence in 2005"
+                        </blockquote>
                     </div>
 
                     <!-- Deep Analysis & Truth Facts -->
                     <div class="result-row analysis-box">
                         <div class="box-header">
                             <span class="box-icon">
-                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="var(--accent-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
-                                    <path d="M9 18h6"/>
-                                    <path d="M10 22h4"/>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" x2="8" y1="13" y2="13" />
+                                    <line x1="16" x2="8" y1="17" y2="17" />
                                 </svg>
                             </span>
-                            <span class="section-title">Verified Truth & Context</span>
+                            <span class="section-title">Evidentiary Findings &amp; Factual Record:</span>
                         </div>
                         <div class="analysis-content" id="res-analysis-text">
                             Nigeria officially gained full independence from Great Britain on October 1, 1960.
@@ -618,12 +705,13 @@
                     <div class="result-row sources-box">
                         <div class="box-header">
                             <span class="box-icon">
-                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="var(--accent-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
                                 </svg>
                             </span>
-                            <span class="section-title">Verified Primary Sources:</span>
+                            <span class="section-title">Verified Primary Sources &amp; Public Archives:</span>
                         </div>
                         <div class="sources-tags" id="res-sources-list">
                             <span class="source-tag">National Archives</span>
@@ -636,15 +724,17 @@
                     <div class="result-row advice-box">
                         <div class="box-header">
                             <span class="box-icon">
-                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="var(--color-warning)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                                    <path d="m9 12 2 2 4-4"/>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    <path d="m9 12 2 2 4-4" />
                                 </svg>
                             </span>
-                            <span class="section-title">Civic Action Advice:</span>
+                            <span class="section-title">Community Advisory &amp; Civic Guidance:</span>
                         </div>
                         <div class="advice-content" id="res-advice-text">
-                            Do not forward or share this claim in social groups. Always double-check historical milestones with credible reference books or educational archives.
+                            Do not forward or share this claim in social groups. Always double-check historical
+                            milestones with credible reference books or educational archives.
                         </div>
                     </div>
 
@@ -652,32 +742,35 @@
                     <div class="result-footer-actions">
                         <button class="btn-secondary" id="btn-copy-report">
                             <span class="action-icon">
-                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
-                                    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                                    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
                                 </svg>
                             </span>
                             <span>Copy WhatsApp Report</span>
                         </button>
                         <button class="btn-secondary" id="btn-share-verdict">
                             <span class="action-icon">
-                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="18" cy="5" r="3"/>
-                                    <circle cx="6" cy="12" r="3"/>
-                                    <circle cx="18" cy="19" r="3"/>
-                                    <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/>
-                                    <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="18" cy="5" r="3" />
+                                    <circle cx="6" cy="12" r="3" />
+                                    <circle cx="18" cy="19" r="3" />
+                                    <line x1="8.59" x2="15.42" y1="13.51" y2="17.49" />
+                                    <line x1="15.41" x2="8.59" y1="6.51" y2="10.49" />
                                 </svg>
                             </span>
                             <span>Share Fact-Check</span>
                         </button>
                         <button class="btn-primary" id="btn-new-check">
                             <span class="action-icon">
-                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
-                                    <path d="M21 3v5h-5"/>
-                                    <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
-                                    <path d="M8 16H3v5"/>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+                                    <path d="M21 3v5h-5" />
+                                    <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+                                    <path d="M8 16H3v5" />
                                 </svg>
                             </span>
                             <span>Verify Another Claim</span>
@@ -695,17 +788,21 @@
                 <div class="feed-title-block">
                     <span class="section-tag">LIVE REGIONAL INTELLIGENCE STREAM</span>
                     <h2 class="feed-title">Live Civic Misinformation Radar</h2>
-                    <p class="feed-subtitle">Real-time repository of claims debunked across public discourse, WhatsApp broadcasts, and civic hotlines in Nigeria & West Africa.</p>
+                    <p class="feed-subtitle">Real-time repository of claims debunked across public discourse, WhatsApp
+                        broadcasts, and civic hotlines in Nigeria & West Africa.</p>
                 </div>
-                
+
                 <!-- Live Search & Filter Bar -->
                 <div class="feed-controls-bar">
                     <div class="feed-search-box">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"/>
-                            <line x1="21" x2="16.65" y1="21" y2="16.65"/>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" x2="16.65" y1="21" y2="16.65" />
                         </svg>
-                        <input type="text" id="radar-search-input" placeholder="Search debunked claims, grants, laws, or keywords..." aria-label="Search radar feed">
+                        <input type="text" id="radar-search-input"
+                            placeholder="Search debunked claims, grants, laws, or keywords..."
+                            aria-label="Search radar feed">
                     </div>
 
                     <div class="feed-category-filters" id="feed-filters">
@@ -729,15 +826,18 @@
         <section class="whatsapp-cta-card">
             <div class="whatsapp-cta-content">
                 <div class="wa-badge">
-                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-right:4px;">
-                        <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
-                        <line x1="12" x2="12.01" y1="18" y2="18"/>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        style="display:inline-block; vertical-align:middle; margin-right:4px;">
+                        <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+                        <line x1="12" x2="12.01" y1="18" y2="18" />
                     </svg>
                     24/7 WHATSAPP ACCESS
                 </div>
                 <h3 class="wa-title">Receive Instant Fact-Checks Right Inside WhatsApp</h3>
                 <p class="wa-desc">
-                    Forward any suspicious message, voice note, or viral photo directly to VerifEye on WhatsApp. Receive a grounded, multi-lingual fact-check report in seconds.
+                    Forward any suspicious message, voice note, or viral photo directly to VerifEye on WhatsApp. Receive
+                    a grounded, multi-lingual fact-check report in seconds.
                 </p>
                 <div class="wa-steps">
                     <div class="wa-step-item">
@@ -753,12 +853,14 @@
                         <span>Get verified truth before sharing</span>
                     </div>
                 </div>
-                <a href="https://wa.me/14155238886?text=Hello%20VerifEye" target="_blank" rel="noopener noreferrer" class="btn-wa-action" id="cta-whatsapp-link">
+                <a href="https://wa.me/14155238886?text=Hello%20VerifEye" target="_blank" rel="noopener noreferrer"
+                    class="btn-wa-action" id="cta-whatsapp-link">
                     <span>Chat with VerifEye Bot on WhatsApp</span>
                     <span class="arrow-icon">
-                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" x2="19" y1="12" y2="12"/>
-                            <polyline points="12 5 19 12 12 19"/>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" x2="19" y1="12" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
                         </svg>
                     </span>
                 </a>
@@ -769,9 +871,10 @@
     <!-- Notification Toast -->
     <div class="toast-notification hidden" id="toast-message" role="alert" aria-live="assertive">
         <span class="toast-icon">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--color-verified)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                <polyline points="22 4 12 14.01 9 11.01"/>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--color-verified)" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
             </svg>
         </span>
         <span class="toast-text" id="toast-text-content">WhatsApp Report copied to clipboard!</span>
@@ -783,17 +886,20 @@
             <div class="footer-brand">
                 <div class="footer-brand-title">
                     <img src="/assets/logo.jpg" alt="VerifEye Logo" class="footer-logo">
-                    <span>VERIFEYE — Civic AI Guard</span>
+                    <span>VERIFEYE — West African Civic Integrity &amp; Media Verification Desk</span>
                 </div>
-                <p>Designed for the AIDF 2026 Civic Integrity & Media Verification Initiative. Empowering citizens, journalists, and civic monitors across Nigeria and West Africa with real-time fact-checking and deepfake forensics.</p>
+                <p>Independent verification and digital media forensics initiative for West Africa. Providing citizens,
+                    journalists, and civic monitors with rapid primary-source fact-checking, acoustic deepfake
+                    detection, and verified public record cross-referencing.</p>
             </div>
             <div class="footer-links">
-                <span class="footer-tech">Real-Time Civic Fact-Checking & Media Verification</span>
-                <span class="footer-copy">© 2026 VerifEye. All rights reserved.</span>
+                <span class="footer-tech">Independent Civic Media Forensics &bull; Primary Source Grounded</span>
+                <span class="footer-copy">&copy; 2026 VerifEye Registry. All rights reserved.</span>
             </div>
         </div>
     </footer>
 
     <script src="/app.js"></script>
 </body>
+
 </html>
